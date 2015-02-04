@@ -20,7 +20,9 @@ GitHub Repos
 | [gitrepo][]   | Small Pythonista utility to easily download repos and releases from GitHub |
 | [FileManager][]| UI FileManager |
 | [gitview][]| More fully featured github client, allows local repo management, push, clone, pull |
-| [ed][]| codemirror based editor, capable of editing many file types |
+| [ed][]| Codemirror based editor, capable of editing many file types |
+| [youtube-dl][]| Download videos from [YouTube][] or other video platforms |
+| [SMBclient][]| UI tool to access Samba/Windows-Shares |
 
 GitHub Gists
 ------------
@@ -40,6 +42,8 @@ GitHub Gists
 | [MarkdownPDF][] | Converts Markdown documents to PDF directly on your iOS device |
 | [indentation] [] | Add this to your action menu and quickly indent multiple lines of code|
 | [github_download] [] | Github file viewer / general URL download script for Pythonista |
+| [fmath] [] | Advanced functional math module      |
+| [Module grabber] [] | Get the sourcecode of a non-builtin module |
 
 [Shellista]: https://github.com/transistor1/shellista
 [Dropbox File Picker]: https://gist.github.com/omz/fb180c58c94526e2c40b
@@ -70,3 +74,8 @@ GitHub Gists
 [gitview]: https://github.com/jsbain/gitview
 [ed]: https://github.com/jsbain/ed
 [StaSh]: http://github.com/ywangd/stash
+[youtube-dl]: https://github.com/HyShai/youtube-dl
+[YouTube]: http://youtube.com
+[fmath]: https://gist.github.com/671620616/6ce321b939dfc23797a3
+[Module grabber]: https://gist.github.com/671620616/0728664ccf51b9b2bcce
+[SMBclient]: https://github.com/humberry/SMBclient
