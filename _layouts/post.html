@@ -7,13 +7,13 @@
   <title>Pythonista Tools</title>
 
   <!-- Latest compiled and minified Bootstrap CSS -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="//bootswatch.com/paper/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="//Pythonista-Tools.github.io/Pythonista-Tools/stylesheets/styles.css">
+  <link rel="stylesheet" href="//Pythonista-Tools.github.io/Pythonista-Tools/stylesheets/style.css">
 
   <!-- Font Awesome -->
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -23,45 +23,53 @@
 </head>
 <body>
 
-  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="../index.html">Pythonista Tools</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="../games.html">Games</a></li>
-              <li><a href="../graphicsandimaging.html">Graphics and Imaging</a></li>
-              <li><a href="../internetofthings.html">Internet of Things</a></li>
-              <li><a href="../pypi.html">Pypi Modules</a></li>
-              <li><a href="../sounds.html">Sounds</a></li>
-              <li><a href="../tenorless.html">Ten lines or less</a></li>
-              <li><a href="../ui.html">UI</a></li>
-              <li><a href="../utilities.html">Utilities</a></li>
-            </ul>
-            <li><a href="../appstore.html">Pythonista Apps in the Apple App Store</a></li>
-            <li class="active"><a href="../blog.html">Blog</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">Pythonista Tools</a>
     </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="nav navbar-nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../scripts.html">Scripts</a></li>
+        <li><a href="../appstore.html">Pythonista Apps in the Apple App Store</a></li>
+        <li class="active"><a href="../blog.html">Blog</a></li>
+        <li><a href="../download.html">Download</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
     <div class="container">
-
+    
+      <h1 class="post-title text-center">{{ page.title }}</h1>
+      <span class="post-date text-center">By <a href="https://github.com/{{ page.author }}">{{ page.author }}</a> | {{ page.date | date_to_string }}</span>
+      <br>
       {{ content }}
+      
+      <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'pythonistatoolsblog';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
       <div class="footer">
         <p class="text-muted">This project is maintained by <a href="https://github.com/Pythonista-Tools">Pythonista-Tools.</a></p>
@@ -73,7 +81,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   </body>
 </html>
